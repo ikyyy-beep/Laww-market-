@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAWW MARKET - Login</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="lion" id="lion">
+        <svg viewBox="0 0 300 280" aria-label="Logo singa">
+            <!-- Surai -->
+            <path class="mane"
+                d="M150 12 L180 35 L215 23 L225 58
+                L263 70 L244 108 L276 137 L246 164
+                L254 203 L218 211 L195 257 L160 235
+                L132 260 L107 231 L72 239 L75 202
+                L39 184 L57 150 L25 124 L60 99
+                L49 64 L89 60 L99 25 L131 39 Z"/>
+
+            <!-- Wajah -->
+            <path class="face"
+                d="M105 65 Q150 45 195 65
+                L210 112 L195 160 L176 190
+                L150 201 L124 190 L105 160
+                L90 112 Z"/>
+
+            <!-- Alis -->
+            <path class="brow"
+                d="M103 106 Q120 94 139 107
+                M161 107 Q180 94 197 106"/>
+
+            <!-- Mata mengikuti gerakan -->
+            <g id="eyes">
+                <ellipse cx="122" cy="119" rx="11" ry="8"
+                    fill="#382318"/>
+                <ellipse cx="178" cy="119" rx="11" ry="8"
+                    fill="#382318"/>
+                <circle class="pupil" cx="124" cy="119" r="4"
+                    fill="#fff0c0"/>
+                <circle class="pupil" cx="180" cy="119" r="4"
+                    fill="#fff0c0"/>
+            </g>
+
+            <!-- Hidung dan moncong -->
+            <ellipse cx="150" cy="157" rx="42" ry="29"
+                fill="#f5dfb8"/>
+            <path d="M137 145 Q150 136 163 145
+                L150 157 Z" fill="#493027"/>
+
+            <!-- Mulut -->
+            <path d="M150 157 L150 171
+                Q136 183 125 171
+                M150 171 Q164 183 175 171"
+                fill="none" stroke="#493027"
+                stroke-width="4" stroke-linecap="round"/>
+
+            <!-- Detail surai -->
+            <g class="hair">
+                <path d="M105 47 L124 67
+                    M194 47 L176 67
+                    M235 89 L211 103
+                    M244 156 L216 163
+                    M220 205 L195 193
+                    M105 217 L124 199
+                    M64 173 L89 165
+                    M65 108 L91 117"
+                    fill="none" stroke="#f4c16a"
+                    stroke-width="4" stroke-linecap="round"/>
+            </g>
+        </svg>
+    </div>
+
+    <h1>LAWW MARKET</h1>
+    <p class="subtitle">YOUR GAME ACCOUNT MARKET</p>
+
+    <form id="loginForm">
+        <input id="username" type="text"
+            placeholder="Username" required>
+
+        <input id="password" type="password"
+            placeholder="Password" required>
+
+        <button type="submit" id="loginBtn">
+            LOGIN
+        </button>
+
+        <p id="message"></p>
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+    background:
+        radial-gradient(ellipse at top, #243c54, #080b11 70%);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    padding: 25px;
+    text-align: center;
+    background: rgba(17, 27, 39, 0.94);
+    border: 1px solid #70542e;
+    border-radius: 22px;
+    box-shadow: 0 0 35px #b8863630;
+    animation: appear 0.9s ease both;
+}
+
+.lion {
+    width: 190px;
+    max-width: 100%;
+    margin: auto;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 12px #e4a94766);
+}
+
+.lion svg {
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+
+.mane {
+    fill: #a95d22;
+    stroke: #603719;
+    stroke-width: 5;
+    stroke-linejoin: round;
+}
+
+.face {
+    fill: #e8b963;
+    stroke: #75451f;
+    stroke-width: 4;
+}
+
+.brow {
+    fill: none;
+    stroke: #75451f;
+    stroke-width: 7;
+    stroke-linecap: round;
+}
+
+h1 {
+    margin: 5px 0;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+.subtitle {
+    margin: 8px 0 25px;
+    color: #d8ad65;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 13px;
+    background: #0a1018;
+    color: white;
+    border: 1px solid #394656;
+    border-radius: 9px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #d8ad65;
+    box-shadow: 0 0 10px #d8ad6533;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    background: linear-gradient(90deg, #a86c24, #f0ca79);
+    color: #17100a;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#message {
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
