@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0711">
+  <title>LAWW MARKET — MLBB Account Store</title>
+  <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">L</span><span>LAWW<span class="purple"> MARKET</span><small>MLBB ACCOUNT STORE</small></span></a>
+    <nav><a href="#katalog">Katalog</a><a href="#cara-beli">Cara Beli</a></nav>
+    <a class="cart-link" href="#keranjang">Keranjang <span id="cart-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> MARKETPLACE AKUN MOBILE LEGENDS</p>
+        <h1>Upgrade koleksi.<br><span class="gradient">Naikkan level permainan.</span></h1>
+        <p class="hero-desc">Temukan akun demo pilihan di LAWW MARKET. Detail jelas, harga transparan, pesanan tercatat.</p>
+        <a class="button primary" href="#katalog">Jelajahi katalog <span>↗</span></a>
+        <div class="trust-row"><span>✦ Data produk contoh</span><span>⌁ Pesanan dikonfirmasi manual</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi gaming abstrak">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="art-card"><div class="art-symbol">L</div><p>LAWW MARKET</p><small>LEVEL UP YOUR COLLECTION</small></div>
+        <div class="floating-tag tag-top">MLBB / ACCOUNT</div><div class="floating-tag tag-bottom">NEON PURPLE EDITION</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>01</strong><span>Tempat belanja</span></div>
+      <div><strong>100%</strong><span>Harga ditampilkan</span></div>
+      <div><strong>MANUAL</strong><span>Konfirmasi pesanan</span></div>
+    </section>
+
+    <section id="katalog" class="section">
+      <div class="section-head"><div><p class="eyebrow">PILIHAN TOKO</p><h2>Katalog <span class="purple">Akun MLBB</span></h2><p class="muted">Produk di halaman ini hanya contoh untuk pengujian sistem.</p></div>
+        <label class="search"><span>⌕</span><input id="search" placeholder="Cari akun..." aria-label="Cari akun"></label>
+      </div>
+      <div id="products" class="product-grid"><p class="muted">Memuat katalog...</p></div>
+    </section>
+
+    <section id="keranjang" class="section lower-grid">
+      <div class="panel">
+        <p class="eyebrow">PESANAN</p><h2>Keranjang kamu</h2>
+        <div id="cart-items"><p class="muted">Belum ada akun dipilih.</p></div>
+        <div class="total-line"><span>Total</span><strong id="cart-total">Rp0</strong></div>
+      </div>
+      <form id="order-form" class="panel">
+        <p class="eyebrow">CHECKOUT MANUAL</p><h2>Buat pesanan</h2>
+        <label>Nama pembeli<input name="buyer_name" required maxlength="80" placeholder="Nama kamu"></label>
+        <label>Kontak (WhatsApp/email)<input name="contact" required maxlength="120" placeholder="Kontak yang bisa dihubungi"></label>
+        <button class="button primary full" type="submit">Kirim pesanan</button>
+        <p class="fine-print">Tombol ini hanya menyimpan permintaan pesanan. Tidak ada pembayaran otomatis dan jangan masukkan password atau data login game.</p>
+        <div id="order-result" role="status" class="result" hidden></div>
+      </form>
+    </section>
+
+    <section id="cara-beli" class="how section">
+      <p class="eyebrow">ALUR PEMBELIAN</p><h2>Jelas dari awal.</h2>
+      <div class="steps"><div><b>01</b><h3>Pilih akun</h3><p>Pilih produk demo dan masukkan ke keranjang.</p></div><div><b>02</b><h3>Kirim pesanan</h3><p>Isi nama serta kontak yang bisa dihubungi.</p></div><div><b>03</b><h3>Konfirmasi manual</h3><p>Penjual mengecek stok, aturan game, dan detail transaksi di luar website.</p></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">L</span><span>LAWW<span class="purple"> MARKET</span></span></a><p>Demo toko • Tidak terafiliasi dengan Moonton.</p></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
